@@ -1,7 +1,8 @@
 name: Auto-fetch Upstream
 on:
   schedule: 
-    - cron: "*/5 * * * *" # every 5 minutes
+    # cron for every 4 hours 
+    - cron: "0 */4 * * *"
 jobs:
   sync-from-upstream:
     runs-on: ubuntu-latest
